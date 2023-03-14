@@ -1,0 +1,14 @@
+@import "../utils/variables";
+
+@mixin MainlinearGradientBackground{
+    background:linear-gradient(#9356DC, #FF79DA);   
+}
+
+@mixin MainButton{
+    width: 13.6rem;
+    height: 3.13rem;
+    border-radius: 25px;
+    color: white; 
+    border-style: none;
+    @include MainlinearGradientBackground();
+}

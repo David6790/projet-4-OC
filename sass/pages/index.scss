@@ -1,0 +1,34 @@
+.localisation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color: $ColorGrey1;
+        .ville{
+            display: flex;
+            gap: 20px;
+        }
+       
+}
+
+.bienvenu{
+    width: 100%;
+    background-color: $ColorGrey2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+        &__TextAcceuil h2{
+            padding:39px 58px 0px 58px;
+        }
+        &__TextAcceuil p{
+            padding-left: 34px;
+            padding-right: 34px;
+
+        }
+      
+
+}
