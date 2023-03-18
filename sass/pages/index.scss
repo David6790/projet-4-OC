@@ -54,28 +54,4 @@
             gap: 20px;
         }
 }
-.heart{
-    position: relative;
-    z-index: 1;
-     &:hover {
-         & .heart__filled {
-             transform:scale(1);
-         }
-     }
-     &__filled {
-         position: absolute;
-         top: 0;
-         right: 0;
-         bottom: 0;
-         left: 0;
-         z-index:-1;
-         color: transparent;
-         @include MainlinearGradientBackground;
-         background-clip: text;
-         -webkit-background-clip: text;
-         transform:scale(0);
-         transform-origin: bottom;
-         transition: transform 750ms;
-     }
- }
 
