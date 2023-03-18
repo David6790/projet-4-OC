@@ -87,6 +87,29 @@ header {
   z-index: -1;
 }
 
+.heart {
+  position: relative;
+  z-index: 1;
+}
+.heart:hover .heart__filled {
+  transform: scale(1);
+}
+.heart__filled {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  color: transparent;
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transform: scale(0);
+  transform-origin: bottom;
+  transition: transform 750ms;
+}
+
 .localisation {
   display: flex;
   flex-direction: column;
@@ -141,6 +164,29 @@ header {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.heart {
+  position: relative;
+  z-index: 1;
+}
+.heart:hover .heart__filled {
+  transform: scale(1);
+}
+.heart__filled {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  color: transparent;
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transform: scale(0);
+  transform-origin: bottom;
+  transition: transform 750ms;
 }
 
 .fonctionnement__card {

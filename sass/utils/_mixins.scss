@@ -1,7 +1,7 @@
 @import "../utils/variables";
 
 @mixin MainlinearGradientBackground{
-    background:linear-gradient(#9356DC, #FF79DA);   
+    background: linear-gradient(#9356DC, #FF79DA);   
 }
 
 @mixin MainButton{
@@ -19,7 +19,7 @@
 }
 
 @mixin btn-main-animation{
-    background:linear-gradient( lighten(#9356DC, 5) , lighten(#FF79DA,5) );
+    background: linear-gradient( lighten(#9356DC, 5) , lighten(#FF79DA,5) );
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: opacity 250ms;
 }
