@@ -5,6 +5,9 @@
     @include MainButton; 
     @include cardShadow; 
     @include MainlinearGradientBackground;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     z-index: 1; 
     &:hover{

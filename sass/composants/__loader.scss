@@ -1,0 +1,70 @@
+$size: 3vh;
+$num-bars:8;
+$anim-dur: 800ms;
+$anim-delay: 100ms;
+$body-delay: $anim-dur + $anim-delay;
+
+.wrapper{
+  z-index:1;
+    top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  position:absolute;
+ 
+}
+
+.load{
+  height: 100%;
+  z-index: -1;
+  display:flex;
+  position:absolute;
+  @include MainlinearGradientBackground;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  gap:5px;
+  justify-content:center;
+  align-items:center;
+  
+  &__bar{
+    font-family: 'Shrikhand', cursive;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.88rem;
+    animation: bars $anim-dur backwards infinite ease-in-out alternate;
+    @for $i from 1 through $num-bars{
+      &--#{$i}{
+        animation-delay: $anim-delay*$i;
+      }
+    }
+    
+  }
+}
+
+
+@keyframes bars {
+    0% {
+        transform: scaleY(1);
+        
+    }
+    100% {
+        transform: scaleY(3.0);
+        
+      
+        
+    }
+}
+@keyframes wrapper{
+0% {
+    transform: translateX(-9999px);
+}
+100% {
+    transform: translateX(0);
+    }
+}
+.wrapper {
+    background-color: white;
+    animation: wrapper 0ms $body-delay*4 both;
+}

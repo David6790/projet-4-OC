@@ -7,7 +7,7 @@ body{
 .wrapper{
     max-width: 475px;
     margin: auto;
-    border: solid 1px;
+    
     
 }
 
@@ -19,4 +19,7 @@ ul li{
     list-style: none;
     margin-left: 0;
     padding-left: 0;
+}
+a{
+    text-decoration: none;
 }

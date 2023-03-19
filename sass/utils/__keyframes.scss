@@ -1,0 +1,23 @@
+@keyframes bars {
+    0% {
+        transform: scaleY(1);
+        
+    }
+    100% {
+        transform: scaleY(3.0);   
+    }
+}
+
+
+@keyframes wrapper{
+0% {
+    transform: translateX(-9999px);
+}
+100% {
+    transform: translateX(0);
+    }
+}
+.wrapper {
+    background-color: white;
+    animation: wrapper 0ms $body-delay*4 both;
+}
