@@ -139,13 +139,14 @@ header {
   gap: 25px;
 }
 
-.restaurants {
+#restaurants {
   padding-left: 17px;
   padding-right: 17px;
   background-color: #EAEAEA;
   padding-top: 30px;
   padding-bottom: 60px;
 }
+
 .restaurants__wrapper {
   display: flex;
   flex-direction: column;
@@ -266,7 +267,7 @@ footer .footer__wrapper ul, footer .footer__wrapper li {
 }
 
 .loader {
-  max-width: 475px;
+  max-width: 473px;
   margin: auto;
   position: absolute;
   top: 0;
