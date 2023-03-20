@@ -9,31 +9,49 @@
  
 }
 
-.load{
-  height: 100%;
-  z-index: -1;
-  display:flex;
-  position:absolute;
-  @include MainlinearGradientBackground;
+.loader{
+  max-width: 475px;
+  margin: auto;
+  position: absolute;
   top:0;
   left:0;
   right:0;
   bottom:0;
-  gap:5px;
-  justify-content:center;
-  align-items:center;
+  height: 100%;
+  z-index:-1;
+  @include MainlinearGradientBackground;
   
-  &__bar{
-    font-family: 'Shrikhand', cursive;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 1.88rem;
-    animation: bars $anim-dur backwards infinite ease-in-out alternate;
-    @for $i from 1 through $num-bars{
-      &--#{$i}{
-        animation-delay: $anim-delay*$i;
+  .load{
+    height: 100%;
+    display:flex;
+    gap:10px;
+    justify-content:center;
+    align-items:center;
+    &__bar{
+      font-family: 'Shrikhand', cursive;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 1.88rem;
+      animation: bars $anim-dur backwards infinite ease-in-out alternate;
+      @for $i from 1 through $num-bars{
+        &--#{$i}{
+          animation-delay: $anim-delay*$i;
+        }
       }
+      
     }
+  }
+  .load-progress{
+    width: 70%;
+    margin: auto;
+    height: 10px;
+    border-radius: 20px;
+    background-color: black;
+    position: relative;
+    bottom: 40%;
+    animation: progress $anim-dur*4;
+    transform-origin: left;
     
   }
 }
+

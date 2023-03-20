@@ -1,5 +1,6 @@
 body{
     margin: auto;
+    max-width: 475px ;
     
     
 }
@@ -7,6 +8,7 @@ body{
 .wrapper{
     max-width: 475px;
     margin: auto;
+    background-color: white;
     
     
 }
@@ -22,4 +24,6 @@ ul li{
 }
 a{
     text-decoration: none;
+    color: black;
+    
 }

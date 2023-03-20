@@ -21,3 +21,28 @@
     background-color: white;
     animation: wrapper 0ms $body-delay*4 both;
 }
+
+@keyframes progress{
+    0% {
+        transform: scaleX(0);
+    }
+    17% {
+        transform: scaleX(.18);
+    }
+    24% {
+        transform: scaleX(.4);
+    }
+    46% {
+        transform: scaleX(.81);
+    }
+    85%{
+      transform: scaleX(.88);
+    }
+
+    90%{
+      transform: scaleX(0.92);  
+    }
+    100% {
+        transform: scaleX(1);
+    }
+  }
