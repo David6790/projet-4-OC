@@ -7,6 +7,15 @@ footer{
     .footer__wrapper{
         width: 100%;
         padding-left: 25px;
+        display: flex;
+        flex-direction: column;
+        @include desktop-version{
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: baseline;
+            gap: 30px;
+        }
+       
         .footer__icone{
             display: flex;
             align-items: center;
@@ -24,6 +33,15 @@ footer{
             padding-left: 0;
             line-height: 30px;
             font-weight: 200;
+            display: flex;
+            flex-direction: column;
+            @include desktop-version{
+                flex-direction: row;
+                align-items: center;
+                gap: 20px;
+            }
+            
+            
         }
     }
 }

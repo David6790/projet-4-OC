@@ -1,5 +1,6 @@
 @import "./utils/variables";
-@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/keyframes";
 @import "./base/generalites";
 @import "./base/typographie";
 @import "./layout/header";
@@ -8,4 +9,4 @@
 @import "./composants/card";
 @import "./layout/footer";
 @import "./composants/_loader";
-@import "./utils/keyframes";
+

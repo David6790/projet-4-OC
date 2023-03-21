@@ -23,3 +23,10 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: opacity 250ms;
 }
+
+
+@mixin desktop-version{
+    @media screen and (min-width : 769px){
+        @content;
+    }
+}

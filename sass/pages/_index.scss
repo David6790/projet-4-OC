@@ -34,23 +34,47 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
+    @include desktop-version{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
         &__wrapper{
             display: flex;
             flex-direction: column;
             gap: 25px;
+            @include desktop-version{
+                flex-direction: row;
+                justify-content: space-between;
+                
+                
+            }
         }
 }
 
 #restaurants{
+    width: 100%;
+    background-color: $ColorGrey2;
     padding-left: 17px;
     padding-right: 17px;
-    background-color: $ColorGrey2;
     padding-top: 30px;
-    padding-bottom: 60px;
+    @include desktop-version{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
     
 }
 .restaurants__wrapper{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-bottom: 60px;
+    width: 100%;
+
+    @include desktop-version{
+        flex-direction: row;
+        overflow: scroll;
+        gap: 40px;
+        
+    }
 }
