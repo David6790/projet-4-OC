@@ -18,7 +18,7 @@
 }
 .wrapper {
   background-color: white;
-  animation: wrapper 0ms 3600ms both;
+  animation: wrapper 0ms 0ms both;
 }
 
 @keyframes progress {
@@ -100,6 +100,7 @@ p {
 }
 
 header {
+  width: 100%;
   text-align: center;
   margin-top: 15px;
   margin-bottom: 5px;
@@ -275,19 +276,18 @@ header {
 .restaurant__card__content {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   padding-left: 13px;
   padding-right: 25px;
 }
 .restaurant__card__content h3 {
-  margin-top: 5px;
-  margin-bottom: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .restaurant__card__content p {
   margin-top: 0px;
 }
 .restaurant__card__content .heart {
-  margin-top: 10px;
   position: relative;
   z-index: 1;
 }
@@ -431,8 +431,21 @@ footer .footer__wrapper ul, footer .footer__wrapper li {
   background-color: white;
   position: relative;
   bottom: 40%;
-  animation: progress 3200ms;
+  animation: progress 0ms;
   transform-origin: left;
+}
+
+.menu-header {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 23px;
+}
+@media screen and (min-width: 769px) {
+  .menu-header {
+    width: 60%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
