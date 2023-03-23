@@ -93,6 +93,12 @@
     border-radius: 15px;
     @include cardShadow;
     overflow: hidden;
+    animation: animationMenu 500ms both;
+    @for $i from 1 through $num-plats{
+        &--#{$i}{
+            animation-delay:$menu-anim-delay * $i;
+        }
+    }
     &:hover > .card-active{
         transform: translateX(0);
     }

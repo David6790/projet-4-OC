@@ -44,6 +44,26 @@
     transform: scaleX(1);
   }
 }
+@keyframes animationMenu {
+  0% {
+    transform: translateY(1999px);
+  }
+  50% {
+    transform: translateY(50%);
+  }
+  60% {
+    transform: translateY(55%);
+  }
+  70% {
+    transform: translateY(60%);
+  }
+  80% {
+    transform: translateY(70%);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 .wrapper {
   max-width: 768px;
   background-color: white;
@@ -318,6 +338,34 @@ header {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   overflow: hidden;
+  animation: animationMenu 500ms both;
+}
+.menu-card--1 {
+  animation-delay: 100ms;
+}
+.menu-card--2 {
+  animation-delay: 200ms;
+}
+.menu-card--3 {
+  animation-delay: 300ms;
+}
+.menu-card--4 {
+  animation-delay: 400ms;
+}
+.menu-card--5 {
+  animation-delay: 500ms;
+}
+.menu-card--6 {
+  animation-delay: 600ms;
+}
+.menu-card--7 {
+  animation-delay: 700ms;
+}
+.menu-card--8 {
+  animation-delay: 800ms;
+}
+.menu-card--9 {
+  animation-delay: 900ms;
 }
 .menu-card:hover > .card-active {
   transform: translateX(0);
