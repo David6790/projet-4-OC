@@ -4,11 +4,19 @@ footer{
     color: white;
     padding-top: 30px;
     padding-bottom: 30px;
+    
+   
+    
+    
+    
     .footer__wrapper{
         width: 100%;
         padding-left: 25px;
         display: flex;
         flex-direction: column;
+       
+
+       
         @include desktopVersion{
             flex-direction: row-reverse;
             justify-content: center;
@@ -44,5 +52,12 @@ footer{
             
         }
     }
+}
+.wrapper-footer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+   
 }
 

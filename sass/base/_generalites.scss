@@ -1,7 +1,6 @@
 
 .wrapper{
     max-width: 768px;
-    background-color: white;
     margin: auto;
     @include desktopVersion{
         max-width: 1440px;

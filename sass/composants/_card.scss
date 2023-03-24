@@ -96,7 +96,7 @@
     animation: animationMenu 500ms both;
     @for $i from 1 through $numPlats{
         &--#{$i}{
-            animation-delay:$menuAnimDelay * $i;
+            animation-delay:$menuAnimDelay *$i;
         }
     }
     &:hover > .card-active{
