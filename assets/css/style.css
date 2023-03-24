@@ -230,7 +230,7 @@ header {
 @media screen and (min-width: 769px) {
   #restaurants {
     padding-left: 10%;
-    padding-right: 10%;
+    padding-right: 0%;
   }
 }
 
