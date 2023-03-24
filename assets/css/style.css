@@ -1,5 +1,4 @@
 /*declaration des couleurs sur le site*/
-/*declaration des couleurs sur le site*/
 @keyframes bars {
   0% {
     transform: scaleY(1);
@@ -126,7 +125,6 @@ header {
   margin-bottom: 5px;
 }
 
-/*declaration des couleurs sur le site*/
 /*declaration des couleurs sur le site*/
 .btn-main {
   width: 13.6rem;

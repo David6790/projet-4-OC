@@ -1,22 +1,19 @@
 /*declaration des couleurs sur le site*/
 
-$ColorPrimary:#9356DC;
-$ColorDeepBlue: #003A68;
-$ColorLighBlue:#89C8FA;
-$ColorGreen:#008766;
-$ColorLightGreen:#99E2D0;
-$ColorGrey1:#D2D2D2;
-$ColorGrey2:#EAEAEA;
-$colorGrey3:#f6f6f6;
+$mainButtonColor:#9356DC;
+$menuHightlightColor:#99E2D0;
+$secondaryBackgroundColor:#D2D2D2;
+$tertiaryBackgroundColor:#EAEAEA;
+$mainBackgroundColor:#f6f6f6;
 
 
 $size: 3vh;
-$num-bars:8;
-$anim-dur: 800ms;
-$anim-delay: 100ms;
-$body-delay: $anim-dur + $anim-delay;
+$numBars:8;
+$animDur: 800ms;
+$animDelay: 100ms;
+$bodyDelay: $animDur + $animDelay;
 
 
-$num-plats:9;
-$menu-anim-dur:1000ms;
-$menu-anim-delay: 100ms;
+$numPlats:9;
+$menuAnimDur:1000ms;
+$menuAnimDelay: 100ms;

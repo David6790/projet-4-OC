@@ -2,7 +2,7 @@
     @include cardShadow;
     width: 100%;
     height: 75px;
-    background-color: $ColorGrey2;
+    background-color: $tertiaryBackgroundColor;
     border-radius: 20px;
     display: flex;
     justify-content: flex-start;
@@ -16,7 +16,7 @@
             position: relative;
             left: -3%;
             border-radius: 50%;
-            background-color: $ColorPrimary;
+            background-color: $mainButtonColor;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -29,7 +29,7 @@
     border-radius: 15px;
     background-color: white;
     @include cardShadow;
-    @include desktop-version{
+    @include desktopVersion{
         width: 351px;
     }
   
@@ -70,7 +70,7 @@
                 left: 0;
                 z-index:-1;
                 color: transparent;
-                @include MainlinearGradientBackground;
+                @include mainLinearGradientBackground;
                 background-clip: text;
                 -webkit-background-clip: text;
                 transform:scale(0);
@@ -94,9 +94,9 @@
     @include cardShadow;
     overflow: hidden;
     animation: animationMenu 500ms both;
-    @for $i from 1 through $num-plats{
+    @for $i from 1 through $numPlats{
         &--#{$i}{
-            animation-delay:$menu-anim-delay * $i;
+            animation-delay:$menuAnimDelay * $i;
         }
     }
     &:hover > .card-active{
@@ -149,7 +149,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color:$ColorLightGreen;
+            background-color:$menuHightlightColor;
             color: white;
             border-radius: 0 15px 15px 0;
         

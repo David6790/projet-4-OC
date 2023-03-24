@@ -2,9 +2,9 @@
 @import "../utils/mixins";
 
 .btn-main{
-    @include MainButton; 
+    @include mainButton; 
     @include cardShadow; 
-    @include MainlinearGradientBackground;
+    @include mainLinearGradientBackground;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,8 +16,8 @@
         }   
     }
     &::after {
-        @include btn-main-animation;
-        @include MainButton;
+        @include btnMainAnimation;
+        @include mainButton;
         content: "";
         position: absolute;
         top: 0;

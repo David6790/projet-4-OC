@@ -9,7 +9,7 @@ footer{
         padding-left: 25px;
         display: flex;
         flex-direction: column;
-        @include desktop-version{
+        @include desktopVersion{
             flex-direction: row-reverse;
             justify-content: center;
             align-items: baseline;
@@ -35,7 +35,7 @@ footer{
             font-weight: 200;
             display: flex;
             flex-direction: column;
-            @include desktop-version{
+            @include desktopVersion{
                 flex-direction: row;
                 align-items: center;
                 gap: 20px;

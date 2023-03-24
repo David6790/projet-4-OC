@@ -3,7 +3,7 @@
     max-width: 768px;
     background-color: white;
     margin: auto;
-    @include desktop-version{
+    @include desktopVersion{
         max-width: 1440px;
         
     }

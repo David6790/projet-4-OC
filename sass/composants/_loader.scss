@@ -19,8 +19,8 @@
   bottom:0;
   height: 100%;
   z-index:-1;
-  @include MainlinearGradientBackground;
-  @include desktop-version{
+  @include mainLinearGradientBackground;
+  @include desktopVersion{
     max-width: 1440px;
   }
   
@@ -35,10 +35,10 @@
       font-weight: 400;
       color: white;
       font-size: 1.88rem;
-      animation: bars $anim-dur backwards infinite ease-in-out alternate;
-      @for $i from 1 through $num-bars{
+      animation: bars $animDur backwards infinite ease-in-out alternate;
+      @for $i from 1 through $numBars{
         &--#{$i}{
-          animation-delay: $anim-delay*$i;
+          animation-delay: $animDelay*$i;
         }
       }
       
@@ -52,7 +52,7 @@
     background-color: white;
     position: relative;
     bottom: 40%;
-    animation: progress $anim-dur*0;
+    animation: progress $animDur*0;
     transform-origin: left;
     
   }

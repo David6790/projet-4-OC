@@ -5,7 +5,7 @@
     justify-content: center;
     width: 100%;
     height: 50px;
-    background-color: $ColorGrey1;
+    background-color:$secondaryBackgroundColor;
         .ville{
             display: flex;
             gap: 20px;
@@ -14,7 +14,7 @@
 
 .bienvenu{
     width: 100%;
-    background-color: $ColorGrey2;
+    background-color: $tertiaryBackgroundColor;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,7 +34,7 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
-    @include desktop-version{
+    @include desktopVersion{
         padding-left: 10%;
         padding-right: 10%;
     }
@@ -42,7 +42,7 @@
             display: flex;
             flex-direction: column;
             gap: 25px;
-            @include desktop-version{
+            @include desktopVersion{
                 flex-direction: row;
                 justify-content: space-between;
                 
@@ -53,11 +53,11 @@
 
 #restaurants{
     width: 100%;
-    background-color: $ColorGrey2;
+    background-color: $tertiaryBackgroundColor;
     padding-left: 17px;
     padding-right: 17px;
     padding-top: 30px;
-    @include desktop-version{
+    @include desktopVersion{
         padding-left: 10%;
         padding-right: 0%;
     }
@@ -71,7 +71,7 @@
     padding-bottom: 60px;
     width: 100%;
 
-    @include desktop-version{
+    @include desktopVersion{
         flex-direction: row;
         overflow: scroll;
         gap: 40px;
