@@ -25,35 +25,10 @@
   }
   
   .load{
-    height: 100%;
-    display:flex;
-    gap:10px;
-    justify-content:center;
-    align-items:center;
-    &__bar{
-      font-family: 'Shrikhand', cursive;
-      font-weight: 400;
-      color: white;
-      font-size: 1.88rem;
-      animation: bars $animDur backwards infinite ease-in-out alternate;
-      @for $i from 1 through $numBars{
-        &--#{$i}{
-          animation-delay: $animDelay*$i;
-        }
-      }
-      
-    }
-  }
-  .load-progress{
-    width: 70%;
-    margin: auto;
-    height: 10px;
-    border-radius: 20px;
-    background-color: white;
-    position: relative;
-    bottom: 40%;
-    animation: progress $animDur*4;
+    animation: loader 0s backwards;
     transform-origin: left;
+    border: solid;
     
   }
+  
 }
