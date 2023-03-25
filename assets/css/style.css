@@ -107,6 +107,15 @@ header {
   margin-bottom: 5px;
 }
 
+.header-menu .arrow {
+  float: left;
+  margin-top: 15px;
+  padding-left: 17px;
+}
+.header-menu .logo {
+  margin-right: 40px;
+}
+
 /*declaration des couleurs sur le site*/
 .btn-main {
   width: 13.6rem;
@@ -442,7 +451,7 @@ footer .footer__wrapper {
     justify-content: flex-start;
     align-items: baseline;
     gap: 30px;
-    padding-right: 30px;
+    padding-right: 9%;
   }
 }
 footer .footer__wrapper .footer__icone {
@@ -602,7 +611,7 @@ footer .footer__wrapper ul, footer .footer__wrapper li {
 @media screen and (min-width: 769px) {
   .menu__wrapper .restaurant__card__content {
     justify-content: center;
-    gap: 10px;
+    gap: 30px;
   }
 }
 
@@ -616,8 +625,8 @@ footer .footer__wrapper ul, footer .footer__wrapper li {
 }
 @media screen and (min-width: 769px) {
   .menu-card-wrapper {
-    padding-left: 210px;
-    padding-right: 210px;
+    padding-left: 15%;
+    padding-right: 15%;
   }
 }
 
