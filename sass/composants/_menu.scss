@@ -11,7 +11,7 @@
     @include desktopVersion{
         width: 70%;
         margin: auto;
-        top:100px;    
+        top:50px;    
     }
 
     h1{
@@ -25,6 +25,18 @@
             justify-content: center;
             gap: 30px;
         }
+    }
+}
+
+.menu-image{
+    width: 100%;
+    height: 275px; 
+    img{
+        width: 100%;
+        height: 275px;
+        @include desktopVersion{
+            height: 375px;
+        }  
     }
 }
 .menu-card-wrapper{
