@@ -13,13 +13,16 @@
 .menu-image{
     width: 100%;
     height: 275px;
+  
     
     
     img{
         width: 100%;
         height: 275px;
-        position: absolute;
-        left: 0;
-        right: 0;
+        @include desktopVersion{
+            height: 475px;
+        }
+      
     }
 }
+

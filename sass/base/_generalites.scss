@@ -2,8 +2,10 @@
 .wrapper{
     max-width: 768px;
     margin: auto;
+    
     @include desktopVersion{
         max-width: 1440px;
+        
         
     }
 }

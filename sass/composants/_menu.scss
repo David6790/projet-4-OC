@@ -6,17 +6,29 @@
     padding:32px 0 53px 0;
     border-radius: 40px 40px 0 0 ;
     background-color: $mainBackgroundColor;
-    position: absolute;
-    top: 290px;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    position: relative;
+    top: -80px;
+    
+    @include desktopVersion{
+        width: 70%;
+        margin: auto;
+        top:100px;
+        
+    }
 
     h1{
         font-size: 1.65rem;
         padding-left: 0px;
         margin-bottom: 15px;
     }
+  
+    .restaurant__card__content{
+        @include desktopVersion{
+            justify-content: center;
+            gap: 10px;
+        }
+    }
+    
   
 
 }
@@ -27,6 +39,10 @@
     padding-left: 17px;
     padding-right:17px;
     background-color: $mainBackgroundColor;
+    @include desktopVersion{
+        padding-left: 210px;
+        padding-right: 210px;
+    }
     
     
 }
@@ -42,4 +58,5 @@
     border-bottom: solid 3px $menuHightlightColor;
 
 }
+
 

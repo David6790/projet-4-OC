@@ -4,24 +4,21 @@ footer{
     color: white;
     padding-top: 30px;
     padding-bottom: 30px;
-    
-   
-    
-    
-    
+    margin-top: -80px;
+    @include desktopVersion{
+        margin-top: 100px;
+    }
     .footer__wrapper{
         width: 100%;
         padding-left: 25px;
         display: flex;
         flex-direction: column;
-       
-
-       
         @include desktopVersion{
             flex-direction: row-reverse;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: baseline;
             gap: 30px;
+            padding-right: 30px;
         }
        
         .footer__icone{
@@ -53,11 +50,5 @@ footer{
         }
     }
 }
-.wrapper-footer{
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-   
-}
+
 
