@@ -488,6 +488,9 @@ footer .footer__wrapper {
     padding-right: 9%;
   }
 }
+footer .footer__wrapper a {
+  color: white;
+}
 footer .footer__wrapper .footer__icone {
   display: flex;
   align-items: center;
@@ -501,6 +504,7 @@ footer .footer__wrapper h3 {
   margin-top: 0px;
 }
 footer .footer__wrapper ul, footer .footer__wrapper li {
+  color: white;
   margin: 0;
   padding-left: 0;
   line-height: 30px;
