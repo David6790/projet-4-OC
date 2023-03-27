@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
     <body>
-        <div class="loader">
+        <div class="loader"><!-- div qui sert de loader pour le site -->
           <div class="loader__wrapper">
                 <div class="loader__wrapper__logo">
                     <img src="./assets/images/logo/ohmyfood.png" alt="loader avec logo ohmyfood"> 
@@ -23,16 +23,16 @@
                 </div>
           </div>   
         </div>  
-        <div class="wrapper wrapper-load">
+        <div class="wrapper wrapper-load"><!--création d'une classe supplémantire "wrapper-load" pour appliquer le loader uniquement à la page d'acceuil-->
             <header>
                 <div>
-                    <h1>ohmyfood</h1>
+                    <h1>ohmyfood</h1><!--choix d'intégrer le logo sous forme de H1 pour optmiser performance par rapport a un fichier png-->
                 </div>
             </header>
             <main>
                 <div class="localisation">
                     <form method="post" class="localisation__formulaire"> 
-                        <div class="recherche_formulaire_label">
+                        <div class="recherche_formulaire_label"><!--mise en place d'un formulaire pour permettre aux utilisateurs de choisir leurs villes plus tard-->
                             <label for="localisation"><i class="fa-solid fa-location-dot"></i></label>
                         </div>    
                         <input type="search" name="localisation" id="localisation" placeholder="Paris, Belleville">                
@@ -53,17 +53,17 @@
                     <h2>Fonctionnement</h2>
                     <div class="fonctionnement__wrapper">
                         <div class="fonctionnement__card">
-                            <div class="number">1</div>
+                            <div class="fonctionnement__card__number">1</div>
                             <i class="fa-solid fa-mobile-screen-button"></i>
                             <p>Choisissez un restaurant</p>
                         </div>
                         <div class="fonctionnement__card">
-                            <div class="number">2</div>
+                            <div class="fonctionnement__card__number">2</div>
                             <i class="fa-solid fa-list-ul"></i>
                             <p>Composez votre menu</p>
                         </div>
                         <div class="fonctionnement__card">
-                            <div class="number">3</div>
+                            <div class="fonctionnement__card__number">3</div>
                             <i class="fa-solid fa-store"></i>
                             <p>Dégustez au restaurant</p>
                         </div>
@@ -77,23 +77,18 @@
                                 <div class="restaurant__card__etiquette">
                                    <span>Nouveau</span> 
                                 </div>
-                                <img src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant la palette du gout">
-                                
+                                <img src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant la palette du gout">  
                             <div class="restaurant__card__content">
                                 <div>
                                     <h3>La Palette du goût</h3>
                                     <p>Ménilmontant</p>
                                 </div>
-                                <div>
-                                    <div >
-                                        <div class="heart">
-                                            <i class="fa-regular fa-heart fa-xl"></i>
-                                            <div class="heart__filled">
-                                                <i class="fa-solid fa-heart fa-xl"></i>
-                                            </div>
-                                        </div>  
-                                    </div>   
-                                </div>  
+                                <div class="heart">
+                                    <i class="fa-regular fa-heart fa-xl"></i>
+                                    <div class="heart__filled"><!--création d'une div avec le coeur rempli pour l'animation remplissage de coeur lors du hover-->
+                                        <i class="fa-solid fa-heart fa-xl"></i>
+                                    </div>
+                                </div>
                             </div>   
                         </div>
                         </a> 
@@ -108,62 +103,49 @@
                                     <h3>La note enchantée</h3>
                                     <p>Charonne</p>
                                 </div>
-                                <div>
-                                    <div >
-                                        <div class="heart">
-                                            <i class="fa-regular fa-heart fa-xl"></i>
-                                            <div class="heart__filled">
-                                                <i class="fa-solid fa-heart fa-xl"></i>
-                                            </div>
-                                        </div>   
+                                <div class="heart">
+                                    <i class="fa-regular fa-heart fa-xl"></i>
+                                    <div class="heart__filled"><!--création d'une div avec le coeur rempli pour l'animation remplissage de coeur lors du hover-->
+                                        <i class="fa-solid fa-heart fa-xl"></i>
                                     </div>
-                                </div>  
+                                </div> 
                             </div>
                               
                         </div>
                         </a> 
                         <a href="./restaurant/a_la_francaise.html">
                             <div class="restaurant__card">
-                                
                                 <img src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="restaurant à la française">
                             <div class="restaurant__card__content">
                                 <div>
                                     <h3>À la française</h3>
                                     <p>Cité Rouge</p>
                                 </div>
-                                <div>
-                                    <div >
-                                        <div class="heart">
-                                            <i class="fa-regular fa-heart fa-xl"></i>
-                                            <div class="heart__filled">
-                                                <i class="fa-solid fa-heart fa-xl"></i>
-                                            </div>
-                                        </div>
-                                        
+                                <div class="heart">
+                                    <i class="fa-regular fa-heart fa-xl"></i>
+                                    <div class="heart__filled"><!--création d'une div avec le coeur rempli pour l'animation remplissage de coeur lors du hover-->
+                                        <i class="fa-solid fa-heart fa-xl"></i>
                                     </div>
-                                </div>  
+                                </div> 
                             </div>
                         </div>
                         </a>  
                         <a href="./restaurant/delice_des_sens.html">
                             <div class="restaurant__card">
-                                
                                 <img src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="restaurant le délice des sens">
                                 <div class="restaurant__card__content">
                                     <div>
                                         <h3>Le délice des sens</h3>
                                         <p>Folie-Méricourt</p>
                                     </div>
-                                    <div>
-                                         <div class="heart">
-                                            <i class="fa-regular fa-heart fa-xl"></i>
-                                                <div class="heart__filled">
-                                                    <i class="fa-solid fa-heart fa-xl"></i>
-                                                </div>
+                                    <div class="heart">
+                                        <i class="fa-regular fa-heart fa-xl"></i>
+                                        <div class="heart__filled"><!--création d'une div avec le coeur rempli pour l'animation remplissage de coeur lors du hover-->
+                                            <i class="fa-solid fa-heart fa-xl"></i>
                                         </div>
-                                    </div>  
+                                    </div>   
                                 </div>
-                        </div>
+                            </div>
                         </a>      
                     </div>
                 </section>  
@@ -196,7 +178,7 @@
                             </a> 
                         </li>
                         <li>
-                            <a href="mailto:contact@ohmyfood.fr">
+                            <a href="mailto:contact@ohmyfood.fr"><!--un mailto pour activer la redaction d'un mail au click-->
                                 Contact
                             </a>  
                         </li>
