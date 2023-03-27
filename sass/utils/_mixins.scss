@@ -1,8 +1,8 @@
-
+/* mixin pour declarer le gradient de couleur principal du site*/
 @mixin mainLinearGradientBackground{
     background: linear-gradient(#9356DC, #FF79DA);   
 }
-
+/* mixin pour declarer les propriétés de bas des bouttons principal */
 @mixin mainButton{
     width: 13.6rem;
     height: 3.13rem;
@@ -11,24 +11,26 @@
     border-style: none; 
 }
 
+/*mixin pour delcarer les ombres des card du projet*/
 @mixin cardShadow{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
 }
 
+/*mixin pour declarer l'animation du boutton principal lors du hover*/
 @mixin btnMainAnimation{
     background: linear-gradient( lighten(#9356DC, 5) , lighten(#FF79DA,5) );
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: opacity 250ms;
 }
 
-
+/* Media queries desktop*/
 @mixin desktopVersion{
     @media screen and (min-width : 993px){
         @content;
     }
 }
-
+/* Media queries tablette*/
 @mixin tabletteVersion{
     @media screen and (min-width:768px) and (max-width: 992px){
         @content;

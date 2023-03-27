@@ -1,6 +1,7 @@
 body{
     width: 100%;
     margin: auto;
+
     .wrapper{
         max-width: 767px;
         margin: auto;
@@ -17,6 +18,7 @@ body{
     box-sizing: border-box;
     
 }
+
 img{
     object-fit: cover;
 }
@@ -26,6 +28,7 @@ ul li{
     margin-left: 0;
     padding-left: 0;
 }
+
 a{
     text-decoration: none;
     color: $mainTextColor;   

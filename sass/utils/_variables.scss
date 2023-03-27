@@ -1,4 +1,4 @@
-/*declaration des couleurs sur le site*/
+/**************************** declaration des couleurs background du projet *****************************/
 
 $mainButtonColor:#9356DC;
 $menuHightlightColor:#99E2D0;
@@ -8,12 +8,15 @@ $mainBackgroundColor:#f6f6f6;
 $secondaryButtonColor:#F5EDFF;
 $etiquetteBackgroundColor:#99E2D0;
 
+
+/***************************** declaration des coiuleurs de text du projet *****************************/
+
 $mainTextColor:black;
 $footerTextColor:white;
 $etiquetteFontColor:#008766;
 
 
-
+/***************************** variables des animations menu *****************************/
 $numPlats:10;
 $menuAnimDur:800ms;
 $menuAnimDelay: 200ms;

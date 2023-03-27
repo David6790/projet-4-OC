@@ -1,3 +1,4 @@
+/********************************** section bienvenu **********************************/
 .bienvenu{
     width: 100%;
     background-color: $tertiaryBackgroundColor;
@@ -17,6 +18,7 @@
         }
 }
 
+/********************************** section fonctionnement **********************************/
 .fonctionnement{
     padding: 0 17px 68px 35px;
     display: flex;
@@ -51,6 +53,7 @@
     }
 }
 
+/********************************** section restaurants **********************************/
 #restaurants{
     width: 100%;
     background-color: $tertiaryBackgroundColor;
