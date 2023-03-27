@@ -13,12 +13,15 @@
   align-items: center;
   background-color: white;
   animation: loader-1 800ms 200ms forwards;
+
   @include tabletteVersion{
     max-width: 992px;
   }
+
   @include desktopVersion{
     max-width: 1440px;
   }
+
     &__wrapper{
       width: 100%;
       display: flex;
@@ -26,6 +29,7 @@
       justify-content: center;
       align-items: center;
       gap: 20px;
+
       &__progress{
         width: 80%;
         margin: auto;
@@ -36,15 +40,11 @@
         transform-origin: left;
   
       }
+
       &__placeholder{
         font-size: 1rem;
         text-align: center;
       }
-  
-
     }
-   
-  
-
 }
 

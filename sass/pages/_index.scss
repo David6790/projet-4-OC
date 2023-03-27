@@ -1,4 +1,3 @@
-
 .bienvenu{
     width: 100%;
     background-color: $tertiaryBackgroundColor;
@@ -7,9 +6,11 @@
     align-items: center;
     text-align: center;
     padding-bottom: 50px;
+
         &__TextAcceuil h2{
             padding:39px 58px 0px 58px;
         }
+
         &__TextAcceuil p{
             padding-left: 34px;
             padding-right: 34px;
@@ -21,28 +22,33 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
+
     h2{
         @include tabletteVersion{
             text-align: center;
         }
     }
+
     @include desktopVersion{
         padding-left: 10%;
         padding-right: 10%;
     }
-        &__wrapper{
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-            @include tabletteVersion{
-                flex-direction: row;
-                justify-content: space-between;
-            }
-            @include desktopVersion{
-                flex-direction: row;
-                justify-content: space-between; 
-            }
+
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        @include tabletteVersion{
+            flex-direction: row;
+            justify-content: space-between;
         }
+        
+        @include desktopVersion{
+            flex-direction: row;
+            justify-content: space-between; 
+        }
+    }
 }
 
 #restaurants{
@@ -51,6 +57,7 @@
     padding-left: 17px;
     padding-right: 17px;
     padding-top: 30px;
+
     h2{
         @include tabletteVersion{
             text-align: center;
@@ -58,12 +65,13 @@
             margin-top: 10px;
         }
     }
+
     @include desktopVersion{
         padding-left: 10%;
         padding-right: 0%;
-    }
-    
+    }   
 }
+
 .restaurants__wrapper{
     display: flex;
     flex-direction: column;
@@ -74,13 +82,12 @@
     @include tabletteVersion{
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-evenly;
-        
+        justify-content: space-evenly; 
     }
+
     @include desktopVersion{
         flex-direction: row;
         overflow: scroll;
-        gap: 40px;   
-        
+        gap: 40px;    
     }
 }

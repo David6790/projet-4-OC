@@ -68,18 +68,17 @@ body {
   width: 100%;
   margin: auto;
 }
-
-.wrapper {
+body .wrapper {
   max-width: 767px;
   margin: auto;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  .wrapper {
+  body .wrapper {
     max-width: 992px;
   }
 }
 @media screen and (min-width: 993px) {
-  .wrapper {
+  body .wrapper {
     max-width: 1440px;
   }
 }
@@ -144,7 +143,6 @@ header {
   margin-right: 40px;
 }
 
-/*declaration des couleurs sur le site*/
 .btn-main {
   width: 13.6rem;
   height: 3.13rem;
@@ -300,6 +298,7 @@ header {
   gap: 20px;
   align-items: center;
   position: relative;
+  z-index: 1;
 }
 .fonctionnement__card .number {
   width: 1.2rem;

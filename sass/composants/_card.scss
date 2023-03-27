@@ -12,7 +12,8 @@
     gap: 20px;
     align-items: center;
     position: relative;
-    
+    z-index: 1;
+
         .number{
             width: 1.2rem;
             height: 1.2rem;
@@ -24,14 +25,14 @@
             background-color: $mainButtonColor;
             display: flex;
             justify-content: center;
-            align-items: center;
-          
+            align-items: center; 
         }
+
     &:hover{
         color: $mainButtonColor;
+
         &::after{
-            opacity: 1;
-            
+            opacity: 1; 
         }
     } 
     &::after{
@@ -45,7 +46,6 @@
         z-index: -1;
         background-color: $secondaryButtonColor;
         border-radius: 20px;
-        
     }   
 }
 
@@ -71,13 +71,13 @@
         top:14px;
         right: 14px;        
     }
-  
-   
+
     & img{
         width: 100%;
         height: 70%;
         border-radius: 15px 15px 0 0;
     }
+
     &__content{
         display: flex;
         justify-content: space-between;
@@ -88,12 +88,13 @@
             margin-top: 10px;
             margin-bottom: 10px;
         }
+
         & p{
             margin-top: 0px;
             
         }
+
         .heart{
-            
             position: relative;
             z-index: 1;
             &:hover {
@@ -101,6 +102,7 @@
                     transform:scale(1);
                 }
             }
+
             &__filled {
                 position: absolute;
                 top: 0;
@@ -117,13 +119,8 @@
                 transition: transform 750ms ease-in-out;
             }
         }        
-    }
-        
+    }      
 }
-
-
-
-
 
 .menu-card{
     display: flex;
@@ -138,9 +135,11 @@
             animation-delay:$menuAnimDelay *$i;
         }
     }
+
     &:hover > .card-active{
         transform: translateX(0);
     }
+
     .card-inactive{ 
         padding: 10px;
         display: flex;
@@ -151,6 +150,7 @@
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
+
             h3{
                 margin-top: 0px;
                 font-size: 18px;
@@ -160,6 +160,7 @@
                 text-overflow: ellipsis;
                 overflow: hidden;
             }
+
             p{
                 font-size: 15px;
                 font-weight: 300;
@@ -171,18 +172,20 @@
         }
         
     }
+
     .card-active{
         display: flex;
         gap: 10px;
         transform: translateX(50px);
         transition: transform 400ms ease-in-out;
+
         &__price{
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            margin-bottom: -8px;
-           
+            margin-bottom: -8px;  
         }
+
         &__check-box{
             width: 50px;
             display: flex;
@@ -191,8 +194,6 @@
             background-color:$menuHightlightColor;
             color: white;
             border-radius: 0 15px 15px 0;
-        
-        }
-       
+        }  
     }
 }

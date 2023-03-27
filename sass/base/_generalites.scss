@@ -1,17 +1,18 @@
 body{
     width: 100%;
     margin: auto;
-}
-.wrapper{
-    max-width: 767px;
-    margin: auto;
-    @include tabletteVersion{
-        max-width: 992px;
+    .wrapper{
+        max-width: 767px;
+        margin: auto;
+        @include tabletteVersion{
+            max-width: 992px;
+        }
+        @include desktopVersion{
+            max-width: 1440px;  
+        }
     }
-    @include desktopVersion{
-        max-width: 1440px;  
-    }
 }
+
 *{
     box-sizing: border-box;
     
@@ -27,7 +28,6 @@ ul li{
 }
 a{
     text-decoration: none;
-    color: $mainTextColor;
-    
+    color: $mainTextColor;   
 }
 

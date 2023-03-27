@@ -8,17 +8,20 @@
     background-color: $mainBackgroundColor;
     position: relative;
     top: -80px;
+
     @include tabletteVersion{
         width: 80%;
         margin: auto;
         padding-left: 5%;
         padding-right: 5%;
     }
+
     @include desktopVersion{
         width: 70%;
         margin: auto;
         top:50px;    
     }
+
     h1{
         font-size: 1.65rem;
         padding-left: 0px;
@@ -39,6 +42,7 @@
     img{
         width: 100%;
         height: 275px;
+
         @include desktopVersion{
             height: 375px;
         }  
@@ -51,12 +55,11 @@
     padding-left: 17px;
     padding-right:17px;
     background-color: $mainBackgroundColor;
+
     @include desktopVersion{
         padding-left: 15%;
         padding-right: 15%;
-    }
-    
-    
+    }  
 }
 
 .course{
@@ -68,7 +71,6 @@
     overflow: visible;
     padding-bottom:13px ;
     border-bottom: solid 3px $menuHightlightColor;
-
 }
 
 

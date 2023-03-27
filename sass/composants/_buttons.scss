@@ -1,6 +1,3 @@
-@import "../utils/variables";
-@import "../utils/mixins";
-
 .btn-main{
     @include mainButton; 
     @include cardShadow; 
@@ -28,6 +25,7 @@
         z-index: -1;
     }
 }
+
 .btn-commande{
     display: flex;
     justify-content: center;
