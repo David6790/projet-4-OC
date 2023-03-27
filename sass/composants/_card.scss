@@ -2,6 +2,8 @@
     @include cardShadow;
     width: 100%;
     height: 75px;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: $tertiaryBackgroundColor;
     color: $mainTextColor;
     border-radius: 20px;
@@ -10,19 +12,20 @@
     gap: 20px;
     align-items: center;
     position: relative;
-    z-index: 1; 
+    
         .number{
-            width: 1rem;
-            height: 1rem;
+            width: 1.2rem;
+            height: 1.2rem;
             color: white;
             font-size: 0.90rem;
-            position: relative;
-            left: -3%;
+            position: absolute;
+            left: -0.8rem;
             border-radius: 50%;
             background-color: $mainButtonColor;
             display: flex;
             justify-content: center;
             align-items: center;
+          
         }
     &:hover{
         color: $mainButtonColor;
@@ -53,6 +56,9 @@
     background-color: white;
     position: relative;
     @include cardShadow;
+    @include tabletteVersion{
+        width: 351px;
+    }
     @include desktopVersion{
         width: 351px;
     }

@@ -1,16 +1,20 @@
-
-.wrapper{
-    max-width: 768px;
+body{
+    width: 100%;
     margin: auto;
-    
+}
+.wrapper{
+    max-width: 767px;
+    margin: auto;
+    @include tabletteVersion{
+        max-width: 992px;
+    }
     @include desktopVersion{
-        max-width: 1440px;
-        
-        
+        max-width: 1440px;  
     }
 }
 *{
     box-sizing: border-box;
+    
 }
 img{
     object-fit: cover;
@@ -26,3 +30,4 @@ a{
     color: $mainTextColor;
     
 }
+

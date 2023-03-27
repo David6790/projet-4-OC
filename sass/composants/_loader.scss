@@ -13,6 +13,9 @@
   align-items: center;
   background-color: white;
   animation: loader-1 800ms 200ms forwards;
+  @include tabletteVersion{
+    max-width: 992px;
+  }
   @include desktopVersion{
     max-width: 1440px;
   }

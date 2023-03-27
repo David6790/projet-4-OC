@@ -21,6 +21,11 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
+    h2{
+        @include tabletteVersion{
+            text-align: center;
+        }
+    }
     @include desktopVersion{
         padding-left: 10%;
         padding-right: 10%;
@@ -29,6 +34,10 @@
             display: flex;
             flex-direction: column;
             gap: 25px;
+            @include tabletteVersion{
+                flex-direction: row;
+                justify-content: space-between;
+            }
             @include desktopVersion{
                 flex-direction: row;
                 justify-content: space-between; 
@@ -42,11 +51,16 @@
     padding-left: 17px;
     padding-right: 17px;
     padding-top: 30px;
+    h2{
+        @include tabletteVersion{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    }
     @include desktopVersion{
         padding-left: 10%;
         padding-right: 0%;
     }
-    
     
 }
 .restaurants__wrapper{
@@ -56,7 +70,11 @@
     padding-bottom: 60px;
     width: 100%;
     margin-bottom: 80px;
-
+    @include tabletteVersion{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
     @include desktopVersion{
         flex-direction: row;
         overflow: scroll;
