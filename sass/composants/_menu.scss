@@ -8,12 +8,17 @@
     background-color: $mainBackgroundColor;
     position: relative;
     top: -80px;
+    @include tabletteVersion{
+        width: 80%;
+        margin: auto;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
     @include desktopVersion{
         width: 70%;
         margin: auto;
         top:50px;    
     }
-
     h1{
         font-size: 1.65rem;
         padding-left: 0px;

@@ -252,6 +252,7 @@ header {
   #restaurants h2 {
     text-align: center;
     margin-bottom: 30px;
+    margin-top: 10px;
   }
 }
 @media screen and (min-width: 993px) {
@@ -634,6 +635,14 @@ footer .footer__wrapper ul, footer .footer__wrapper li {
   background-color: #f6f6f6;
   position: relative;
   top: -80px;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .menu__wrapper {
+    width: 80%;
+    margin: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
 @media screen and (min-width: 993px) {
   .menu__wrapper {
