@@ -2,13 +2,14 @@
 /**************************** declaration des couleurs background du projet *****************************/
 /***************************** declaration des coiuleurs de text du projet *****************************/
 /***************************** variables des animations menu *****************************/
+/***************************** variables du loader *****************************/
 /* mixin pour declarer le gradient de couleur principal du site*/
 /* mixin pour declarer les propriétés de bas des bouttons principal */
 /*mixin pour delcarer les ombres des card du projet*/
 /*mixin pour declarer l'animation du boutton principal lors du hover*/
 /* Media queries desktop*/
 /* Media queries tablette*/
-/*Keyframe pour loader*/
+/******************************************Keyframe pour loader******************************************/
 @keyframes loader-1 {
   0% {
     opacity: 1;
@@ -43,7 +44,7 @@
     transform: translateX(-999999px);
   }
 }
-/*Keyframe pour bar de progression*/
+/****************************************** Keyframe pour bar de progression *************************************************/
 @keyframes progress {
   0% {
     transform: scaleX(0);
@@ -67,7 +68,7 @@
     transform: scaleX(1);
   }
 }
-/* keyframe animation des menus */
+/****************************************** keyframe animation des menus ******************************************/
 @keyframes animationMenu {
   0% {
     transform: translateY(1999px);
@@ -644,7 +645,7 @@ footer .footer__wrapper ul, footer .footer__wrapper li {
   height: 10px;
   border-radius: 20px;
   background: linear-gradient(#9356DC, #FF79DA);
-  animation: progress 700ms both;
+  animation: progress 600ms both;
   transform-origin: left;
 }
 .loader__wrapper__placeholder {

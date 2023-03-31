@@ -1,5 +1,4 @@
-/*Keyframe pour loader*/
-
+/******************************************Keyframe pour loader******************************************/
 @keyframes loader-1{
     0% {
         opacity: 1;
@@ -36,7 +35,7 @@
 
   }
 
-/*Keyframe pour bar de progression*/
+/****************************************** Keyframe pour bar de progression *************************************************/
   @keyframes progress{
     0% {
         transform: scaleX(0);
@@ -62,7 +61,7 @@
     }
   }
 
-/* keyframe animation des menus */
+/****************************************** keyframe animation des menus ******************************************/
   @keyframes animationMenu{
     0% {
         transform: translateY(1999px);
