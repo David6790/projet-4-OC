@@ -325,6 +325,9 @@ header {
   position: relative;
   z-index: 1;
 }
+.fonctionnement__card p {
+  font-weight: 500;
+}
 .fonctionnement__card__number {
   width: 1.2rem;
   height: 1.2rem;
@@ -383,6 +386,7 @@ header {
   width: fit-content;
   padding: 6px 9px;
   position: absolute;
+  border-radius: 2px;
   top: 14px;
   right: 14px;
 }
